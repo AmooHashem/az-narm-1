@@ -14,7 +14,7 @@ function App() {
       <br />
       <Typography>Please Enter Your Number:</Typography>
       <TextField variant='outlined' value={secondNumber} onChange={(e) => setSecondNumber(e.target.value)} />
-      <Typography>{`Result: 3 × ${secondNumber} = ${4 * secondNumber}`}</Typography>
+      <Typography>{`Result: 3 × ${secondNumber} = ${3 * secondNumber}`}</Typography>
     </>
   );
 }
