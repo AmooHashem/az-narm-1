@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { Divider, TextField, Typography } from '@mui/material';
+import { useState } from 'react';
 
 function App() {
+  const [firstNumber, setFirstNumber] = useState(0);
+  const [secondNumber, setSecondNumber] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>Salam!</h1>
+      <Typography>Please Enter Your Number:</Typography>
+      <TextField variant='outlined' value={firstNumber} onChange={(e) => setFirstNumber(e.target.value)} />
+      <Typography>{`Result: 2 × ${firstNumber} = ${2 * firstNumber}`}</Typography>
+      <br />
+      <Typography>Please Enter Your Number:</Typography>
+      <TextField variant='outlined' value={secondNumber} onChange={(e) => setSecondNumber(e.target.value)} />
+      <Typography>{`Result: 3 × ${secondNumber} = ${3 * secondNumber}`}</Typography>
+    </>
   );
 }
 
