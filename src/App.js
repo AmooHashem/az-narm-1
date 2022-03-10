@@ -14,7 +14,7 @@ function App() {
       <Typography>Please Enter Your Number:</Typography>
       <TextField variant='outlined' value={forthNumber} onChange={(e) => setForthNumber(e.target.value)} />
       <TextField variant='outlined' value={fifthNumber} onChange={(e) => setFifthNumber(e.target.value)} />
-      <Typography>{`Result: ${forthNumber} + ${fifthNumber} = ${forthNumber + fifthNumber}`}</Typography>
+      <Typography>{`Result: ${forthNumber} + ${fifthNumber} = ${parseInt(forthNumber) + parseInt(fifthNumber)}`}</Typography>
       <br />
       <Typography>Please Enter Your Number:</Typography>
       <TextField variant='outlined' value={thirdNumber} onChange={(e) => setThirdNumber(e.target.value)} />
